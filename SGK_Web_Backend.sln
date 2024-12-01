@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGK_Web_Backend", "SGK_Web_Backend\SGK_Web_Backend.csproj", "{2C0AC442-BE43-48BC-A0E1-E7BBD91003E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{98394DF8-D34D-4D42-8069-69E5C4226691}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C0AC442-BE43-48BC-A0E1-E7BBD91003E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0AC442-BE43-48BC-A0E1-E7BBD91003E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0AC442-BE43-48BC-A0E1-E7BBD91003E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0AC442-BE43-48BC-A0E1-E7BBD91003E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿version: '3.8'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgre_Database
+    environment:
+      POSTGRES_USER: ssc_username
+      POSTGRES_PASSWORD: ssc_password
+      POSTGRES_DB: SGK_Web_Backend_Db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build:
+      context: .
+      dockerfile: SGK_Web_Backend/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=SGK_Web_Backend_Db;Username=ssc_username;Password=ssc_password
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:

@@ -1,0 +1,20 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  app:
+    build:
+      context: "C:\\Users\\Kemal can\\Documents\\Kodlama\\SGK_Web_Backend"
+      dockerfile: "SGK_Web_Backend/Dockerfile"
+      target: "build"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/SGK_Web_Backend.dll"
+    environment: {}
+    image: "sgk_web_backend:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Kemal can\\Documents\\Kodlama\\SGK_Web_Backend\\SGK_Web_Backend:/app:rw"
+    - "C:\\Users\\Kemal can\\Documents\\Kodlama\\SGK_Web_Backend:/src:rw"
+    - "C:\\Users\\Kemal can\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
