@@ -1,4 +1,5 @@
 To initialize project you need to do
+
   1-) Setup and open docker desktop  
   
   2-) Open the console and typing corresponding code in the main root( SGK_Web_Backend). Possibly: /Downloads/SGK_Web_Backend
